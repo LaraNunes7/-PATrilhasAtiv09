@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<string> palavras = new List<string> { "C#", "é", "muito", "legal" };
+        string maisLonga = palavras[0];
+
+        foreach (string palavra in palavras)
+        {
+            if (palavra.Length > maisLonga.Length)
+            {
+                maisLonga = palavra;
+            }
+        }
+
+        Console.WriteLine("A string mais longa é: " + maisLonga);
+    }
+}
